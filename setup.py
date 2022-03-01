@@ -3,11 +3,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='project',
+    name='Deepspeech ASR on Gaudi Processors',
     version='0.0.0',
-    description='Describe Your Cool Project',
+    description='ASR made from deepspech framework for AWS Habana Gaudi Framework',
     author='',
-    author_email='',
+    author_email='bencherif.research@gmail.com',
     # REPLACE WITH YOUR OWN GITHUB PROJECT LINK
     url='https://github.com/PyTorchLightning/pytorch-lightning-conference-seed',
     install_requires=['pytorch-lightning'],
