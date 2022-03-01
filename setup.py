@@ -9,8 +9,8 @@ setup(
     author='',
     author_email='bencherif.research@gmail.com',
     # REPLACE WITH YOUR OWN GITHUB PROJECT LINK
-    url='https://github.com/PyTorchLightning/pytorch-lightning-conference-seed',
-    install_requires=['pytorch-lightning'],
+    url='https://github.com/mbencherif/DeepSpeechHB',
+    install_requires=['torch, pytorch-lightning'],
     packages=find_packages(),
 )
 
