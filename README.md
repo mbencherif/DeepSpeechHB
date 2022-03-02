@@ -13,20 +13,20 @@ Please take a look at : https://youtu.be/snuXBMYjs5k
 Running On EC2-DL1 instance 
 ===========================
  
-STEP1 :
+ STEP1 :
 -------
 
  To run the code you need to download the : https://github.com/HabanaAI/Model-References.git
 inside a directory called /work3 (this directory will be mapped insde your docker later on).
 Go to /work3/Model-References/PyTorch/examples/computer_vision 
 
-STEP2 :
+ STEP2 :
 ------- 
 
  run :
  git clone https://github.com/mbencherif/DeepSpeechHB.git
 
-STEP3 :
+ STEP3 :
 -------
 
  From the DOCKS3 directory of this git.
@@ -34,7 +34,8 @@ STEP3 :
 Use the Dockerfile:
  -run make_docker3.sh
        It will do the build : docker build . --tag deepspeech_hb3:latest
-STEP4:
+
+ STEP4:
 --------
  -go one level up, run w3.sh : 
        It will do :
@@ -49,8 +50,6 @@ There are two tasks done but with some errors to correct:
  2. python mainhb.py 
  To test the app using pytorchlightning.
 
-
-
  Running On your local machine :
 ================================
 
@@ -62,7 +61,7 @@ If you want to test if the programs work on your local machine
  you can modify all the parameters, once the code is running correctly.
  
  Errors I bypassed:
- ==================
+==================
  I solved the torchaudio, issue as when installing a code depending on torchaudio, it will break the torch version, installed the Docker and the habana framework will not run.
  when you import torchaudio, it will check for : 
  synapse_logger INFO. pid=334 at /home/jenkins/workspace/cdsoftwarebuilder/create-pytorch---bpt-d/repos/pytorch-integration/pytorch_helpers/synapse_logger/synapse_logger.cpp:340 Done command: restart
@@ -93,6 +92,8 @@ OSError: libc10_cuda.so: cannot open shared object file: No such file or directo
                                                                         
  Errors on hold :
 ==================
+Error occurs only on the Hb framework, local machine code : python main.py , works fine. give a try....
+                                                                       
 oot@ip-172-31-94-254:/work3/DeepSpeech3# python mainhb.py 
 Loading Habana modules from /usr/local/lib/python3.8/dist-packages/habana_frameworks/torch/lib
 synapse_logger INFO. pid=473 at /home/jenkins/workspace/cdsoftwarebuilder/create-pytorch---bpt-d/repos/pytorch-integration/pytorch_helpers/synapse_logger/synapse_logger.cpp:340 Done command: restart
@@ -150,8 +151,7 @@ Traceback (most recent call last):
   File "/work3/DeepSpeech3/deepspeech_main.py", line 126, in forward
     x = x.reshape(sizes[0], sizes[1] * sizes[2], sizes[3])  # (batch, feature, time)
 RuntimeError: invalid shape dimension -372
- 
- 
+  
  
  
  
