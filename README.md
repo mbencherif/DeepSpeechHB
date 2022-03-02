@@ -3,7 +3,10 @@
 # Deepspeech ASR on EC2 Gaudi Processors
 AWS Habana 
 Deep Learning Challenge 
-  
+
+This work has been inspired from : https://github.com/jiwidi/DeepSpeech-pytorch.git
+Many changes have been done and files added, to fit with EC2-Habana Gaudi processors.
+ 
 ## Description   
 This is a first implementation on how to implement pytorch deepspeech ASR on EC2 DL1 instanes : Gaudi Processor Based instance
 
