@@ -13,11 +13,11 @@ STEP1 :
 --------
 To run the code you need to Download the : https://github.com/HabanaAI/Model-References.git
 inside a directory called /work3 
-
+Go to /work3/Model-References/PyTorch/examples/computer_vision 
 STEP2 :
 -------- 
-Go to Model-References/PyTorch/examples/computer_vision 
-then git clone this code. 
+run :
+ git clone https://github.com/mbencherif/DeepSpeechHB.git
 
 STEP3 :
 -------
