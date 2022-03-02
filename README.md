@@ -14,8 +14,8 @@ On EC2 instance
 ================
 STEP1 :
 --------
-To run the code you need to Download the : https://github.com/HabanaAI/Model-References.git
-inside a directory called /work3 
+To run the code you need to download the : https://github.com/HabanaAI/Model-References.git
+inside a directory called /work3 (this directory will be mapped insde your docker later on).
 Go to /work3/Model-References/PyTorch/examples/computer_vision 
 STEP2 :
 -------- 
