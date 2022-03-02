@@ -1,4 +1,4 @@
-<div align="center">    
+<div align="left">    
  
 # Deepspeech ASR on EC2 Gaudi Processors
 AWS Habana 
