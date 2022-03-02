@@ -13,18 +13,22 @@ This is a first implementation on how to implement pytorch deepspeech ASR on EC2
 On EC2 instance 
 ================
 STEP1 :
---------
-To run the code you need to download the : https://github.com/HabanaAI/Model-References.git
+-------
+
+ To run the code you need to download the : https://github.com/HabanaAI/Model-References.git
 inside a directory called /work3 (this directory will be mapped insde your docker later on).
 Go to /work3/Model-References/PyTorch/examples/computer_vision 
+
 STEP2 :
--------- 
-run :
+------- 
+
+ run :
  git clone https://github.com/mbencherif/DeepSpeechHB.git
 
 STEP3 :
 -------
-From the DOCKS3 directory of this git.
+
+ From the DOCKS3 directory of this git.
   
 Use the Dockerfile:
  -run make_docker3.sh
