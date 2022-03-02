@@ -23,8 +23,8 @@ class Argparser(argparse.ArgumentParser):
                       help='Data Type. fp32, bf16. Default: fp32')
     self.add_argument('--no-cuda', action='store_true', help='disables CUDA training')
     self.add_argument("--hmp", action="store_true", help="Enable HMP")
-    self.add_argument('--hmp-bf16', default='ops_bf16_mnist.txt', help='path to bf16 ops list in hmp O1 mode')
-    self.add_argument('--hmp-fp32', default='ops_fp32_mnist.txt', help='path to fp32 ops list in hmp O1 mode')
+    self.add_argument('--hmp-bf16', default='config/ops_bf16_dsphb.txt', help='path to bf16 ops list in hmp O1 mode')
+    self.add_argument('--hmp-fp32', default='config/ops_fp32_dsphb.txt', help='path to fp32 ops list in hmp O1 mode')
     self.add_argument('--hmp-opt-level', default='O1', help='choose optimization level for hmp')
     self.add_argument('--hmp-verbose', action='store_true', help='enable verbose mode for hmp')
     self.add_argument('--epochs', default=1, type=int, metavar='N',
